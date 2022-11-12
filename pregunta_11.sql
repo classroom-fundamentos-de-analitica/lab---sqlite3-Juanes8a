@@ -37,4 +37,9 @@
 --  0  2018     6
 --
 --  >>> Escriba su codigo a partir de este punto <<<
--- 
+--
+SELECT SUBSTRING(c14,1,4) as "YEAR", COUNT("YEAR") as "CANT"
+FROM tbl1
+WHERE YEAR == "2018"
+GROUP BY "YEAR";
+
