@@ -38,7 +38,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT SUBSTR(c14,1,4) as "YEAR", COUNT("YEAR") as "CANT"
+SELECT SUBSTR(c14,1,4) as "YEAR", COUNT("YEAR") as "COUNT(*)"
 FROM tbl1
 WHERE YEAR == "2018"
 GROUP BY "YEAR";

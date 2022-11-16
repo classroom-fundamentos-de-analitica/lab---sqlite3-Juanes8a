@@ -41,6 +41,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT SUBSTR(c23,1,4) as "YEAR", AVG(c21) as "avg(c21)"
+SELECT SUBSTR(c23,1,4) as "YEAR", round(AVG(c21),6) as "avg(c21)"
 FROM tbl2
 GROUP BY "YEAR";
+
