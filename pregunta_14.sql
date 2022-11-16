@@ -43,7 +43,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT t1.K0, round(AVG(t2.c21 ),6) as "avg(c21)"
+SELECT t1.K0, AVG(t2.c21 ) as "avg(c21)"
 FROM tbl1 t1
 JOIN (SELECT K1, c21 
       FROM tbl2 ) t2
