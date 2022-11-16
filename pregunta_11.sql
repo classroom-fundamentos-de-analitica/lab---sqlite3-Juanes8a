@@ -38,8 +38,6 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT SUBSTR(c14,1,4) as "YEAR", COUNT("YEAR") as "COUNT(*)"
-FROM tbl1
-WHERE YEAR == "2018"
-GROUP BY "YEAR";
+SELECT  COUNT(*) FROM tbl1 
+where '2018'=strftime('%Y', c14);
 
